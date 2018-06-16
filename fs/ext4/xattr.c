@@ -1423,7 +1423,7 @@ static int ext4_xattr_make_inode_space(handle_t *handle, struct inode *inode,
 			if ((last->e_name_len == 4) &&
 			    (last->e_name_index == EXT4_XATTR_INDEX_SYSTEM) &&
 			    !memcmp(last->e_name, "data", 4))
-			    continue;
+				continue;
 			total_size =
 			EXT4_XATTR_SIZE(le32_to_cpu(last->e_value_size)) +
 					EXT4_XATTR_LEN(last->e_name_len);
