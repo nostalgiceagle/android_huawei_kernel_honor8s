@@ -32,8 +32,8 @@ ifneq ($(KERNELRELEASE),)
     $(MODULE_NAME)-objs += common/wmt_build_in_adapter.o
 
 
-    # Do build-in for Makefile checking
-    export CONFIG_WLAN_DRV_BUILD_IN=y
+    # Do(n't) do build-in for Makefile checking
+    # export CONFIG_WLAN_DRV_BUILD_IN=y
 
     ifeq ($(CONFIG_WLAN_DRV_BUILD_IN),y)
         PATH_TO_WMT_DRV      = vendor/mediatek/kernel_modules/connectivity/common
