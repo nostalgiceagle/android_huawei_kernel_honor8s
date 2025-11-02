@@ -2845,7 +2845,7 @@ mipi_rx_ana_csi0b: mipi_rx_ana_csi0b@11c11000 {
 				vendor {
 					compatible = "android,vendor";
 					dev = "/dev/block/platform/bootdevice/by-name/vendor";
-					type = "erofs";
+					type = "ext4";
 					mnt_flags = "ro";
 #ifndef CONFIG_MTK_AB_OTA_UPDATER
 #ifndef CONFIG_MTK_DM_VERITY_OFF
